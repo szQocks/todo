@@ -1,0 +1,142 @@
+html,body,*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ebffbf;
+	font-family: sans-serif;
+}
+.todo{
+	border: 2px solid black;
+	width: 600px;
+	min-height: 400px;
+	margin: 80px auto;
+	background: #f8fcf0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.todo-head{
+	display: flex;
+	min-height: 40px;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+.todo-head{
+	border-bottom: 2px solid black;
+}
+.todo-footer{
+	display: flex;
+	min-height: 40px;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 2px solid black;
+}
+.todo-footer_right button {
+	margin-right: 15px;
+	background: black;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	padding: 4px;
+	border-radius: 5px;
+}
+.todo-footer_right button:hover{
+	cursor: pointer;
+}
+.newList,
+.newTask{
+	border: none;
+	overflow: none;
+	border-bottom: 2px solid gray;
+	background: none;
+	color: gray;
+	font-size: 18px;
+}
+.addList,
+.addTask{
+	border: none;
+	background: none;
+	color: black;
+	font-size: 22px;
+	margin: 0 5px;
+}
+.addList,.addTask:hover{
+	cursor: pointer;
+}
+.todo-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.lists{
+	border-bottom: 2px solid black;
+	min-height: 55px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.tasks{
+	min-height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	padding: 5px;
+}
+.list{
+	display: flex;
+	background: black;
+	color: #fff;
+	padding: 5px;
+	margin:  5px;
+}
+.list button{
+	border: none;
+	background: none;
+	color: red;
+	margin-left: 8px;
+	min-height: 20px;
+}
+.list button:hover{
+	cursor: pointer;
+}
+.task{
+	background: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 4px;
+	margin: 5px;
+}
+.task b {
+
+}
+.task button{
+	font-weight: 900;
+	margin-left: 10px;
+	background: none;
+	border: none;
+}
+.task button:hover{
+	cursor: pointer;
+}
+input[type="checkbox"]{
+	margin-right: 10px;
+}
+.none{
+	display: none;
+}
+.done{
+
+}
+.active{
+	color: lime !important;
+}
+.checked{
+	background: #ffe8e8;
+}

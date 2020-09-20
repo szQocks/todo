@@ -60,16 +60,17 @@ var renderMyTasks = () => {
 	})
 	setToLocal();
 }
-//checked
+//check
 var check = (e,index) => {
-	e.target.hasAttribute('checked') ? tasks[index].checked = '' : tasks[index].checked = 'checked';
 	if(e.target.hasAttribute('checked')){
+		tasks[index].checked = '';
 		e.target.removeAttribute('checked');
-		e.target.classList.remove('checked');
+		e.target.nextElementSibling.classList.remove('checked');
 	}
 	else{
+		tasks[index].checked = 'checked';
 		e.target.setAttribute('checked','');
-		e.target.classList.add('checked');
+		e.target.nextElementSibling.classList.add('checked');
 	}
 	setToLocal();
 }

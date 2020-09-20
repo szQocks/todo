@@ -76,9 +76,9 @@ var check = (e,index) => {
 }
 //delete task
 var deleteTask = (e,index) => {
-	e.target.parentElement.remove();
 	tasks.splice(index,1);
 	setToLocal();
+	e.target.parentElement.remove();
 }
 //remove all active
 var removeAllActive = () => {
